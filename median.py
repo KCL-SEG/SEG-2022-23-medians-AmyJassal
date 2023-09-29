@@ -48,13 +48,13 @@ def median(arr):
     #arr = mergeSort(arr, 0, arr.length)
     arr.sort()
     if(len(arr) % 2 == 0):
-        n1 = int(len(arr)/2)
-        n2 = int((len(arr)/2) - 1)
+        n1 = round(len(arr)/2)
+        n2 = round((len(arr)/2) - 1)
         n3 = (arr[n1] + arr[n2]) / 2
         return n3
     else:
         n1 = (len(arr)/2) - 1
-        return arr[int(n1)]
+        return arr[round(n1)]
 
 while True:
     try:
